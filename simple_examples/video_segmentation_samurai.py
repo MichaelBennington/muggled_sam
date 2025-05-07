@@ -24,8 +24,8 @@ from lib.demo_helpers.samurai import SimpleSamurai
 
 # Define pathing & device usage
 initial_frame_index = 0
-video_path = "/path/to/video.mp4"
-model_path = "/path/to/samv2_model.pth"
+video_path = "croppedbites.mp4"
+model_path = "/home/benni/Documents/GitHub/sam2/checkpoints/sam2.1_hiera_large.pt"
 device, dtype = "cpu", torch.float32
 if torch.cuda.is_available():
     device, dtype = "cuda", torch.bfloat16

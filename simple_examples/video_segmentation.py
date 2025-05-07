@@ -22,10 +22,10 @@ import torch
 from lib.v2_sam.make_sam_v2 import make_samv2_from_original_state_dict
 
 # Define pathing & device usage
-initial_frame_index = 0
-video_path = "/path/to/video.mp4"
-model_path = "/path/to/samv2_model.pth"
-device, dtype = "cpu", torch.float32
+initial_frame_index = 30
+video_path = "croppedbites.mp4"
+model_path = "/home/benni/Documents/GitHub/sam2/checkpoints/sam2.1_hiera_large.pt"
+device, dtype = "gpu", torch.float32
 if torch.cuda.is_available():
     device, dtype = "cuda", torch.bfloat16
 
